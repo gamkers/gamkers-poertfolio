@@ -1,13 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 body{
-    background: linear-gradient(to left, #035bff, #00ffb3);
+    background: linear-gradient(-45deg,#310075, #023394, #00aec1, #600101);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
     margin: 0;
     font-family: 'Poppins';
 }
+
 .navbar{
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.32);
+    
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    border: 1px solid rgba(255, 255, 255, 0.41);
     padding: 1em;
     position: fixed;
     top: 0; 
@@ -22,11 +41,11 @@ body{
     .logo{
         text-decoration: none;
         font-weight: bold;
-        color: #001aff;
+        color: #000a62;
         font-size: 1.2em;
 
         span{
-            color:rgb(0, 0, 0);
+            color:rgb(255, 255, 255);
         }
     }
     nav{
@@ -67,7 +86,7 @@ section{
         text-align: center;
         text-transform: uppercase;
         font-weight: normal;
-        box-shadow: .6em 0 0 #4effc4;
+        
         margin-left: auto;
         margin-right: auto;
 	    width: 34ch;
@@ -75,7 +94,7 @@ section{
         color: rgb(255, 255, 255);
         letter-spacing: .5em ;
         white-space: nowrap;
-        animation: caret .5s step-end infinite alternate, type 5s steps(35, end)
+        animation: caret .5s step-end infinite alternate, type 5s steps(33, end)
                 
     }
 
@@ -131,7 +150,7 @@ section{
 
 .features-section{
     margin-top: 0%;
-    background: linear-gradient(to left, #f35e8d, #753a88);
+    background: linear-gradient(to left, #2f0072, #012a7e);
     color: white;
 
     
@@ -172,7 +191,7 @@ ul.feauters-list{
 }
 
 .features-section2{
-    background:linear-gradient(to right, #42275a, #4200dd);
+    background:linear-gradient(to right, #3F0071, #7a002f);
     color: rgb(255, 255, 255);
     z-index: 850;
     margin: 0;
@@ -197,7 +216,7 @@ ul.feauters-list{
 
 .skills{
 
-    background: linear-gradient(to left, #e22db5, #21e452);
+    background: linear-gradient(to left, #005c5b, #860021);
     color: white;
    
     .title{
@@ -290,12 +309,17 @@ ul.feauters-list{
 
 
 .testimonials-section{
-    background: linear-gradient(to left, #033eff, #d32fc5);
+    background: linear-gradient(to left, #000e3d, #1b0019);
     color: white;
 
 
     li{
-        background:linear-gradient(to left, #00eeff, #033dff);
+        background: rgba( 255, 255, 255, 0.2 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 14.5px );
+        -webkit-backdrop-filter: blur( 14.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
         text-align: center;
         padding: 2em 1em;
         width: 80%;
@@ -544,7 +568,7 @@ nav{
             position: absolute;
             width: 10%;
             height: 20em;
-            background: linear-gradient(to left, #003cff, #00b3a485);
+            background: linear-gradient(to left, #003cff, #00000085);
             left: 0;
             top: -4em;
         }
