@@ -1,13 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 body {
-  background: -webkit-gradient(linear, right top, left top, from(#035bff), to(#00ffb3));
-  background: linear-gradient(to left, #035bff, #00ffb3);
+  background: linear-gradient(-45deg, #310075, #023394, #00aec1, #600101);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  height: 100vh;
   margin: 0;
   font-family: 'Poppins';
 }
 
 .navbar {
-  background: white;
+  background: rgba(255, 255, 255, 0.32);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 0.41);
   padding: 1em;
   position: fixed;
   top: 0;
@@ -18,12 +49,12 @@ body {
 .navbar .logo {
   text-decoration: none;
   font-weight: bold;
-  color: #001aff;
+  color: #000a62;
   font-size: 1.2em;
 }
 
 .navbar .logo span {
-  color: black;
+  color: white;
 }
 
 .navbar nav {
@@ -65,8 +96,6 @@ section {
   text-align: center;
   text-transform: uppercase;
   font-weight: normal;
-  -webkit-box-shadow: .6em 0 0 #4effc4;
-          box-shadow: .6em 0 0 #4effc4;
   margin-left: auto;
   margin-right: auto;
   width: 34ch;
@@ -74,8 +103,8 @@ section {
   color: white;
   letter-spacing: .5em;
   white-space: nowrap;
-  -webkit-animation: caret 0.5s step-end infinite alternate, type 5s steps(35, end);
-          animation: caret 0.5s step-end infinite alternate, type 5s steps(35, end);
+  -webkit-animation: caret 0.5s step-end infinite alternate, type 5s steps(33, end);
+          animation: caret 0.5s step-end infinite alternate, type 5s steps(33, end);
 }
 
 @-webkit-keyframes type {
@@ -138,8 +167,8 @@ section {
 
 .features-section {
   margin-top: 0%;
-  background: -webkit-gradient(linear, right top, left top, from(#f35e8d), to(#753a88));
-  background: linear-gradient(to left, #f35e8d, #753a88);
+  background: -webkit-gradient(linear, right top, left top, from(#2f0072), to(#012a7e));
+  background: linear-gradient(to left, #2f0072, #012a7e);
   color: white;
 }
 
@@ -175,8 +204,8 @@ ul.feauters-list li::before {
 }
 
 .features-section2 {
-  background: -webkit-gradient(linear, left top, right top, from(#42275a), to(#4200dd));
-  background: linear-gradient(to right, #42275a, #4200dd);
+  background: -webkit-gradient(linear, left top, right top, from(#3F0071), to(#7a002f));
+  background: linear-gradient(to right, #3F0071, #7a002f);
   color: white;
   z-index: 850;
   margin: 0;
@@ -200,8 +229,8 @@ ul.feauters-list li::before {
 }
 
 .skills {
-  background: -webkit-gradient(linear, right top, left top, from(#e22db5), to(#21e452));
-  background: linear-gradient(to left, #e22db5, #21e452);
+  background: -webkit-gradient(linear, right top, left top, from(#005c5b), to(#860021));
+  background: linear-gradient(to left, #005c5b, #860021);
   color: white;
 }
 
@@ -307,14 +336,19 @@ ul.feauters-list li::before {
 }
 
 .testimonials-section {
-  background: -webkit-gradient(linear, right top, left top, from(#033eff), to(#d32fc5));
-  background: linear-gradient(to left, #033eff, #d32fc5);
+  background: -webkit-gradient(linear, right top, left top, from(#000e3d), to(#1b0019));
+  background: linear-gradient(to left, #000e3d, #1b0019);
   color: white;
 }
 
 .testimonials-section li {
-  background: -webkit-gradient(linear, right top, left top, from(#00eeff), to(#033dff));
-  background: linear-gradient(to left, #00eeff, #033dff);
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(14.5px);
+  -webkit-backdrop-filter: blur(14.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   text-align: center;
   padding: 2em 1em;
   width: 80%;
@@ -553,8 +587,8 @@ nav li a:hover {
     position: absolute;
     width: 10%;
     height: 20em;
-    background: -webkit-gradient(linear, right top, left top, from(#003cff), to(#00b3a485));
-    background: linear-gradient(to left, #003cff, #00b3a485);
+    background: -webkit-gradient(linear, right top, left top, from(#003cff), to(#00000085));
+    background: linear-gradient(to left, #003cff, #00000085);
     left: 0;
     top: -4em;
   }
